@@ -6,7 +6,7 @@ import BootState from './states/boot'
 
 class Game extends Phaser.Game {
   constructor () {
-    super(600, 400, Phaser.AUTO, 'game')
+    super(window.innerWidth, window.innerHeight, Phaser.AUTO, 'game')
 
     this.state.add('BootState', BootState, true)
   }
